@@ -1,0 +1,70 @@
+[
+  {
+    "experiment_name": "Baseline (Adam)",
+    "config": {
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "num_filters": 64,
+      "kernel_size": 3,
+      "num_epochs": 50,
+      "dropout_rate": 0.5
+    },
+    "best_val_acc": 0.9568106312292359,
+    "test_acc": 0.9635761589403974,
+    "training_time": 111.484977,
+    "final_train_loss": 0.2121125120402567,
+    "final_val_loss": 0.11035164214200356
+  },
+  {
+    "experiment_name": "Optimizer: SGD",
+    "config": {
+      "optimizer": "SGD",
+      "learning_rate": 0.01,
+      "batch_size": 64,
+      "num_filters": 64,
+      "kernel_size": 3,
+      "num_epochs": 50,
+      "dropout_rate": 0.5
+    },
+    "best_val_acc": 0.9235880398671097,
+    "test_acc": 0.9370860927152318,
+    "training_time": 133.431365,
+    "final_train_loss": 0.2770377592976166,
+    "final_val_loss": 0.2171354199267701
+  },
+  {
+    "experiment_name": "Learning Rate: 0.0001",
+    "config": {
+      "optimizer": "Adam",
+      "learning_rate": 0.0001,
+      "batch_size": 64,
+      "num_filters": 64,
+      "kernel_size": 3,
+      "num_epochs": 50,
+      "dropout_rate": 0.5
+    },
+    "best_val_acc": 0.7724252491694352,
+    "test_acc": 0.7831125827814569,
+    "training_time": 114.284728,
+    "final_train_loss": 0.4002858482835308,
+    "final_val_loss": 0.5848765286100267
+  },
+  {
+    "experiment_name": "Batch Size: 32",
+    "config": {
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "num_filters": 64,
+      "kernel_size": 3,
+      "num_epochs": 50,
+      "dropout_rate": 0.5
+    },
+    "best_val_acc": 1.0,
+    "test_acc": 0.9917218543046358,
+    "training_time": 140.476125,
+    "final_train_loss": 0.1391864484341285,
+    "final_val_loss": 0.035909327935192276
+  }
+]
